@@ -3,6 +3,9 @@ import random
 arr1 = [3, 7, 1, 0, 4]
 # A list of lists (2D array): 3 rows, 2 columns
 arr2 = [[2, 3], [7, 1], [0, 4]]
+arr2.append([0, 5, 6])
+
+
 # List comprehension: [value for i in range(...)] creates a list in one line
 # Five times the value 7
 arr3 = [7 for i in range(5)]
