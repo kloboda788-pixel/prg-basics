@@ -14,7 +14,7 @@ with open(email_file, 'r', encoding='utf-8') as file:
 # regular expression pattern for amounts:
 # the € sign followed by one or more digits;
 # the brackets ( ) mean that only the digits are returned
-pattern = r'€(\d+)'
+pattern = r'(?<=€\s*)\d+'
 
 # extract numbers from email
 # tip: findall() method returns an array
